@@ -1,0 +1,69 @@
+/* Layout */
+.coming-wrapper {
+    position: relative;
+    background: var(--bg);
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Card */
+.coming-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 56px 48px;
+    max-width: 620px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 20px 60px rgba(55, 68, 240, 0.15);
+}
+
+.coming-card h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.coming-card p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.skill-badge {
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    background: rgba(55, 68, 240, 0.06);
+}
+
+/* Footer */
+.footer-text {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .coming-card {
+        padding: 40px 24px;
+    }
+
+    .coming-card h1 {
+        font-size: 2.4rem;
+    }
+}
